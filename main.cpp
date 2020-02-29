@@ -26,9 +26,9 @@ int main() {
         int elapsed = SDL_GetTicks();
         swarm.update(elapsed);
 
-        unsigned char red = (1 + sin(elapsed * 0.00035)) * 128;
-        unsigned char green = (1 + sin(elapsed * 0.00025)) * 128;
-        unsigned char blue = (1 + sin(elapsed * 0.0003)) * 128;
+        unsigned char red = (1 + sin(elapsed * 0.00085)) * 128;
+        unsigned char green = (1 + sin(elapsed * 0.00105)) * 128;
+        unsigned char blue = (1 + sin(elapsed * 0.0005)) * 128;
         // Draw particle
 
         const Particle * const pParticle = swarm.getParticles();
